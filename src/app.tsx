@@ -1,29 +1,33 @@
 import React from 'react'
-import {Center} from "@chakra-ui/react";
+import {Alert, Center, HStack, Text, VStack} from "@chakra-ui/react";
+
 import {Counter} from "./features/counter/counter";
+
 import './app.css'
 import viteLogo from '/vite.svg'
 import reactLogo from './assets/react.svg'
 
-function App() {
+const App = (): JSX.Element => {
 
   return (
-    <div className="App">
+    <VStack className="App">
       <Center role="logo">
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo"/>
         </a>
-        <a href="https://reactjs.org" target="_blank">
+        <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo"/>
         </a>
       </Center>
-      <h1>Vite + React</h1>
+      <Text fontSize='6xl'>Vite + React</Text>
       <Counter/>
-      <p className="read-the-docs">
+      <Alert status='info' alignItems='center'
+             justifyContent='center'
+             textAlign='center'>
         Click on the Vite and React logos to learn more
-      </p>
-    </div>
+      </Alert>
+    </VStack>
   )
 }
 
-export default App
+export default App;

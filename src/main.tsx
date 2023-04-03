@@ -1,17 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {ChakraProvider} from "@chakra-ui/react";
-import App from './app'
-import './index.css'
+import {ChakraProvider, extendTheme} from "@chakra-ui/react";
 import {Provider} from "react-redux";
+
+import '@fontsource/noto-sans-kr';
+
+import './index.css';
+import App from './app';
 import {store} from "./app/store";
+import theme from "./theme";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
     <Provider store={store}>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <App/>
       </ChakraProvider>
     </Provider>
-  </React.StrictMode>,
 )
