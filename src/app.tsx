@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Center} from "@chakra-ui/react";
 import {Counter} from "./features/counter/counter";
 import './app.css'
