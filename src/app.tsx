@@ -1,5 +1,5 @@
 import React from 'react'
-import {Alert, Center, HStack, Text, VStack} from "@chakra-ui/react";
+import {Alert, Center, Text, VStack} from "@chakra-ui/react";
 
 import {Counter} from "./features/counter/counter";
 
