@@ -25,11 +25,10 @@ const App = (): JSX.Element => {
   return (
     <React.Fragment>
       <Flex gap={2}>
-        <IconButton ref={btnRef} aria-label="Menus" icon={<MdMenu/>} onClick={onOpen} size="sm"/>
-        <Button size="sm">Help</Button>
-
+        <IconButton ref={btnRef} aria-label="Menus" fontSize="24px" icon={<MdMenu/>} onClick={onOpen}/>
+        <Button>Help</Button>
         <Spacer/>
-        <IconButton aria-label="logout" title="logout" icon={<MdLogout/>} size="sm"/>
+        <IconButton aria-label="logout" title="logout" icon={<MdLogout/>}/>
 
       </Flex>
       <Drawer
