@@ -21,7 +21,7 @@ const App = (): JSX.Element => {
   return (
     <React.Fragment>
       <Flex flex={1} flexDirection="row" h="100%">
-        <VStack p="2px">
+        <VStack py={1} px="1px" boxShadow="md">
           <IconButton ref={btnRef} aria-label="Menus" title="Main menu" fontSize="24px" icon={<MdMenu/>}
                       onClick={onOpen}/>
           <MainDrawer isOpen={isOpen} onClose={onClose} btnRef={btnRef}/>
